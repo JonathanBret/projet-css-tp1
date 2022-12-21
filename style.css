@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+}
+
+.menu-nav {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.img1 {
+    width: 8%;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 1em;
+    width: 20%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+    color: black;
+}
+
+body h1 {
+    padding-top: 1.8em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 1.2em
+}
+
+
+.formulaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid.fa-location-dot {
+    border: #F2F2F2 0.6em solid;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 10%;
+
+}
+
+.rechercher {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.champ {
+    border: 0.6em white solid;
+}
+
+body button {
+    color: white;
+    background-color: #0065FC;
+    border-radius: 20px;
+    border: #0065FC 0.6em solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+body h3 {
+    margin-top: 2em;
+}
+
+.filtre {
+    display: flex;
+
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 1.3em;
+}
+
+.hebergements {
+    background-color: #F2F2F2;
+    height: 626px;
+    width: 880px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+
+}
+
+.list-loc {
+    min-height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.loc-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 200px;
+    flex: 1;
+    height: 199px;
+    width: 246px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    border: 5px solid white;
+
+
+}
+
+.loc1 {
+    background-image: url(/projet2/ImagesBooki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.loc2 {
+    background-image: url(/Images-Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    margin-left: 31px;
+}
+
+.loc3 {
+    background-image: url(/Images-Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    margin-left: 31px;
+    margin-right: 40px;
+}
+
+.loc4 {
+    background-image: url(/Images-Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    margin-bottom: 200px;
+    margin-left: 40px;
+}
+
+.loc5 {
+    background-image: url(/Images-Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    margin-left: 31px;
+}
+
+.loc6 {
+    background-image: url(/Images-Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    margin-left: 31px;
+    margin-right: 40px;
+}
+
+.loc-details {
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 26px 0px 16px;
+}
+
+.loc-name {
+    font-weight: 700;
+    color: black;
+    padding: 5px 0;
+    font-size: 1em;
+}
+
+.loc-price {
+    color: black;
+    padding-bottom: 5px;
+}
+
+.loc-stars {
+    color: #0065FC;
+}
+
+.main-section {
+    width: 1300px;
+    display: flex;
+    margin: 0 50px;
+}
+
+.popular {
+    width: 420px;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    height: 625px;
+    margin-left: 40px;
+}
+
+main a h2 {
+    background-color: red;
+    bottom: 0;
+    margin-bottom: 800px;
+
+}
+
+.loc7 {
+    background-image: url(/Images-Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.loc8 {
+    background-image: url(/Images-Booki/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.loc9 {
+    background-image: url(/Images-Booki/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+.most-popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin-left: 37px;
+}
+
+.popular-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 144px;
+    width: 343px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+
+.popular-details {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    right: 0;
+    height: 100%;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+
+.popular-name {
+    font-weight: 700;
+    color: black;
+    padding-top: 16px;
+    padding-bottom: 7px;
+    font-size: 1em;
+}
+
+.popular-price {
+    color: black;
+    padding-bottom: 44px;
+}
+
+.popular-stars {
+    color: #0065FC;
+    font-size: small;
+}
+
+.fa-solid.fa-chart-line {
+    color: #0065FC;
+    padding-right: 42px;
+    height: 15.75px;
+    width: 18px;
+    font-size: smaller;
+}
+
+.section-title-icons {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*********
+.plus-button {
+    position: absolute;
+    margin-top: 559px;
+}
+
+/************************************FIN DU TEST********************************************/

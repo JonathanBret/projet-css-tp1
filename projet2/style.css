@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1400px;
+}
+.menu-nav{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.img1{
+    width: 8%;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+nav ul{
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-top: 1em;
+    width: 20%;
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    margin: auto;
+     color: black;
+}
+body h1{
+    padding-top: 1.8em;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 1.2em
+}
+
+body p{
+    display: flex;
+    padding-top: 0.7em;
+    padding-left: 2em;
+}
+body div{
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-top: 0.5em;
+
+}
+.formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-solid.fa-location-dot{
+    border: #F2F2F2 0.6em solid;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 10%;
+
+}
+.rechercher{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+.champ{
+    border: 0.6em white solid ;
+}
+body button{
+    color: white;
+    background-color: #0065FC;
+    border-radius: 20px;
+    border: #0065FC 0.6em solid;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+body h3{
+    margin-top: 2em;
+}
+.filtre{
+    display: flex;
+    
+}
+
+/*************************************voir si ca marche******************************************/
+.card {
+  width: 400px; /*1*/
+  margin: 0px auto; /*2*/
+  background-color: white; /*3*/
+  box-shadow: 0px 5px 20px #999; /*4*/
+}
+.card a { /*5*/
+  text-decoration: none;
+  color: black;
+}
+.card-image {
+  overflow: hidden;/*3*/
+}
+.card-image img {
+
+}
+/************************************FIN DU TEST********************************************/

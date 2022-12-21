@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/ -->
+<html lang="fr-FR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.gekkode.com/xmlrpc.php">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<!-- This site is optimized with the Yoast SEO plugin v19.10 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Réaliser une carte en CSS ( Card UI CSS ) - Gekkode</title>
+<meta name="description" content="Schématiser et réaliser une carte en CSS dans un tutoriel en deux étapes, nous utilisons dans ce tutoriel la propriété filter qui permet de faire un traitement sur une image...">
+<link rel="canonical" href="https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Réaliser une carte en CSS ( Card UI CSS ) - Gekkode">
+<meta property="og:description" content="Schématiser et réaliser une carte en CSS dans un tutoriel en deux étapes, nous utilisons dans ce tutoriel la propriété filter qui permet de faire un traitement sur une image...">
+<meta property="og:url" content="https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/">
+<meta property="og:site_name" content="Gekkode">
+<meta property="article:published_time" content="2022-11-02T16:45:00+00:00">
+<meta property="article:modified_time" content="2022-11-02T16:48:34+00:00">
+<meta property="og:image" content="https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:type" content="image/png">
+<meta name="author" content="dflandrin">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:label1" content="Écrit par">
+<meta name="twitter:data1" content="dflandrin">
+<meta name="twitter:label2" content="Durée de lecture estimée">
+<meta name="twitter:data2" content="5 minutes">
+<script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/amp4ads-host-v0.js.télécharger"></script><script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(5).txt"></script><script type="text/javascript" id="www-widgetapi-script" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/www-widgetapi.js.télécharger" async=""></script><script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(6).txt" id="google_shimpl"></script><script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/iframe_api"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#article","isPartOf":{"@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/"},"author":{"name":"dflandrin","@id":"https://www.gekkode.com/#/schema/person/97d5142edd9f64b83dffbca88860e2e5"},"headline":"Réaliser une carte en CSS ( Card UI CSS )","datePublished":"2022-11-02T16:45:00+00:00","dateModified":"2022-11-02T16:48:34+00:00","mainEntityOfPage":{"@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/"},"wordCount":686,"commentCount":0,"publisher":{"@id":"https://www.gekkode.com/#organization"},"image":{"@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#primaryimage"},"thumbnailUrl":"https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css.png","articleSection":["CSS","Développement","Tutoriels"],"inLanguage":"fr-FR"},{"@type":"WebPage","@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/","url":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/","name":"Réaliser une carte en CSS ( Card UI CSS ) - Gekkode","isPartOf":{"@id":"https://www.gekkode.com/#website"},"primaryImageOfPage":{"@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#primaryimage"},"image":{"@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#primaryimage"},"thumbnailUrl":"https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css.png","datePublished":"2022-11-02T16:45:00+00:00","dateModified":"2022-11-02T16:48:34+00:00","description":"Schématiser et réaliser une carte en CSS dans un tutoriel en deux étapes, nous utilisons dans ce tutoriel la propriété filter qui permet de faire un traitement sur une image...","breadcrumb":{"@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#breadcrumb"},"inLanguage":"fr-FR","potentialAction":[{"@type":"ReadAction","target":["https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/"]}]},{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#primaryimage","url":"https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css.png","contentUrl":"https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css.png","width":1280,"height":720},{"@type":"BreadcrumbList","@id":"https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.gekkode.com/"},{"@type":"ListItem","position":2,"name":"Réaliser une carte en CSS ( Card UI CSS )"}]},{"@type":"WebSite","@id":"https://www.gekkode.com/#website","url":"https://www.gekkode.com/","name":"Gekkode","description":"Chaque jour, nous vous apportons les dernières nouvelles, des tutoriels et des packages dans l&#039;univers du développement web","publisher":{"@id":"https://www.gekkode.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.gekkode.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"fr-FR"},{"@type":"Organization","@id":"https://www.gekkode.com/#organization","name":"Gekkode","url":"https://www.gekkode.com/","logo":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://www.gekkode.com/#/schema/logo/image/","url":"https://www.gekkode.com/wp-content/uploads/2022/10/cropped-GECKO.png","contentUrl":"https://www.gekkode.com/wp-content/uploads/2022/10/cropped-GECKO.png","width":320,"height":367,"caption":"Gekkode"},"image":{"@id":"https://www.gekkode.com/#/schema/logo/image/"}},{"@type":"Person","@id":"https://www.gekkode.com/#/schema/person/97d5142edd9f64b83dffbca88860e2e5","name":"dflandrin","image":{"@type":"ImageObject","inLanguage":"fr-FR","@id":"https://www.gekkode.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/1b51ec07278cd8eb2faedf627d20f056?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/1b51ec07278cd8eb2faedf627d20f056?s=96&d=mm&r=g","caption":"dflandrin"},"sameAs":["https://gekkode.com"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+<link rel="alternate" type="application/rss+xml" title="Gekkode » Flux" href="https://www.gekkode.com/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.gekkode.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/wp-emoji-release.min.js.télécharger" type="text/javascript" defer=""></script>
+<!-- gekkode.com is managing ads with Advanced Ads 1.37.2 --><script data-wpfc-render="false" id="gekko-ready">
+window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 0.07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='wp-block-library-css' href='https://www.gekkode.com/wp-includes/css/dist/block-library/style.min.css?ver=6.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='classic-theme-styles-css' href='https://www.gekkode.com/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz.css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<!-- <link rel='stylesheet' id='prismcss-css' href='https://www.gekkode.com/wp-content/plugins/prism-highlight/css/prism-highlight.css?ver=6.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='cmplz-general-css' href='https://www.gekkode.com/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=6.3.4' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='hfe-style-css' href='https://www.gekkode.com/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1.6.13' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='elementor-icons-css' href='https://www.gekkode.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='elementor-frontend-css' href='https://www.gekkode.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.7.8' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(1).css" media="all">
+<link rel="stylesheet" id="elementor-post-5-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/post-5.css" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='carredas-elementor-magnific-popup-css' href='https://www.gekkode.com/wp-content/plugins/carredas-elementor/public/css/magnific-popup.css?ver=1.0.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='carredas-elementor-beerslider-css' href='https://www.gekkode.com/wp-content/plugins/carredas-elementor/public/css/beerslider.min.css?ver=1.0.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='carredas-elementor-menu-responsive-css' href='https://www.gekkode.com/wp-content/plugins/carredas-elementor/public/css/menu-responsive.css?ver=1.0.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='carredas-elementor-css' href='https://www.gekkode.com/wp-content/plugins/carredas-elementor/public/css/carredas-elementor-public.css?ver=1.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='elementor-global-css' href='https://www.gekkode.com/wp-content/uploads/elementor/css/global.css?ver=1666368105' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(2).css" media="all">
+<link rel="stylesheet" id="elementor-post-1064-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/post-1064.css" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='hfe-widgets-style-css' href='https://www.gekkode.com/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.13' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(3).css" media="all">
+<link rel="stylesheet" id="elementor-post-9-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/post-9.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-1828-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/post-1828.css" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='hello-elementor-css' href='https://www.gekkode.com/wp-content/themes/gecko/style.min.css?ver=2.3.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://www.gekkode.com/wp-content/themes/gecko/theme.min.css?ver=2.3.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='newsletter-css' href='https://www.gekkode.com/wp-content/plugins/newsletter/style.css?ver=7.5.6' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='eael-general-css' href='https://www.gekkode.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.4.2' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(4).css" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/css(1)" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://www.gekkode.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://www.gekkode.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(5).css" media="all">
+<script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz.js.télécharger" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://www.gekkode.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script> -->
+<!-- <script type='text/javascript' src='https://www.gekkode.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script> -->
+<link rel="https://api.w.org/" href="https://www.gekkode.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.gekkode.com/wp-json/wp/v2/posts/1064"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.gekkode.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.gekkode.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.1">
+<link rel="shortlink" href="https://www.gekkode.com/?p=1064">
+<link rel="alternate" type="application/json+oembed" href="https://www.gekkode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gekkode.com%2Fdeveloppement%2Frealiser-une-carte-en-css-card-ui-css%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.gekkode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.gekkode.com%2Fdeveloppement%2Frealiser-une-carte-en-css-card-ui-css%2F&amp;format=xml">
+<style>.cmplz-hidden{display:none!important;}</style><!-- Analytics by WP Statistics v13.2.7 - https://wp-statistics.com/ -->
+<script>var WP_Statistics_http = new XMLHttpRequest();WP_Statistics_http.open('GET', 'https://www.gekkode.com/wp-json/wp-statistics/v2/hit?_=1668075692&_wpnonce=13a1e8055b&wp_statistics_hit_rest=yes&referred=https%3A%2F%2Fwww.gekkode.com%2Fdeveloppement%2Frealiser-une-carte-en-css-card-ui-css%2F&exclusion_match=yes&exclusion_reason=CrawlerDetect&track_all=1&current_page_type=post&current_page_id=1064&search_query&page_uri=/developpement/realiser-une-carte-en-css-card-ui-css/', true);WP_Statistics_http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");WP_Statistics_http.send(null);</script>
+<script async="" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(7).txt" crossorigin="anonymous" data-checked-head="true"></script><link rel="icon" href="https://www.gekkode.com/wp-content/uploads/2022/10/GECKO-150x150.png" sizes="32x32">
+<link rel="icon" href="https://www.gekkode.com/wp-content/uploads/2022/10/GECKO.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.gekkode.com/wp-content/uploads/2022/10/GECKO.png">
+<meta name="msapplication-TileImage" content="https://www.gekkode.com/wp-content/uploads/2022/10/GECKO.png">
+<style type="text/css" id="wp-custom-css">
+body {
+padding: 0px!important;
+}
+blockquote {
+display: block;
+border-left: 3px solid lightgray;
+margin: 0px;
+padding-left: 1rem;
+}
+.tnp-subscription input.tnp-submit {
+background: #34495e;
+text-transform:uppercase;
+border-radius: 5px;
+padding: 10px 20px;
+}
+.tnp-subscription input[type=email] {
+border: 1px solid #ddd;
+background: #eee;
+}
+.infinitescroll-button-loadmore {
+border-radius: 5px;
+}
+.gekkode-toc .lwptoc:first-child, .gekkode-toc .lwptoc {
+margin:0px;
+}
+.gekkode-toc  .lwptoc_i {
+padding: 0px;
+}
+.gekkode-toc .lwptoc_item a:before {
+content: "\f105";
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+color: #e74c3c;
+margin-right: 10px;
+font-size: 14px;
+margin-top:2px;
+}
+.gekkode-toc .lwptoc_toggle .lwptoc_toggle_label {
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+font-size: 0px;
+}
+.gekkode-toc .lwptoc_toggle {
+display: none;
+margin-left: 10px;
+position: relative;
+top: -2px;
+}
+.gekkode-toc .lwptoc_item_number:after {
+content: "-";
+margin-left: 5px;
+display: inline;
+}
+.fa-angle-right:before {
+content: "\f105";
+}
+.gekkode-toc .lwptoc-notInherit .lwptoc_i DIV a {
+margin-bottom: 5px;
+display: flex;
+gap: 5px;
+}
+.gekkode-toc .lwptoc-notInherit .lwptoc_i DIV a:hover {
+border-bottom:none!important;
+}
+.gekkode-toc .lwptoc_toggle::before, .gekkode-toc .lwptoc_toggle::after {
+content: "";
+}
+.gekkode-toc .lwptoc_toggle .lwptoc_toggle_label::before {
+font-size: 16px;
+content: "\f106";
+}
+.gekkode-toc .lwptoc_toggle .lwptoc_toggle_label[data-label="Masquer"]::before {
+content: "\f107";
+}
+.elementor-slideshow__title {
+display: none;
+}
+#page {
+overflow-x:hidden;
+}
+.wp-block-pullquote p {
+font-size: 1rem;
+line-height: 1.6;
+}
+.cmplz-cookiebanner .cmplz-title {
+margin-top: 10px!important;
+}
+.cmplz-deny {
+position: absolute;
+top: 0px!important;
+right: 70Px!important;
+text-align: right!important;
+font-size: 11px!important;
+color: #e74c3c!important;
+padding: 0px!important;
+width: 69px!important;
+height: 20px!important;
+}
+</style>
+<script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/js"></script><script src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/js"></script><script>window['gtag_enable_tcf_support'] = false;
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S8812ZLCWW', {
+cookie_flags:'secure;samesite=none',
+});
+
+cmplzScriptLoaded();</script><link href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/banner-1-optin.css" type="text/css" rel="stylesheet"><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(8).txt" as="script"><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(8).txt"></script><link rel="preload" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(9).txt" as="script"><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(9).txt"></script><link rel="preload" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(8).txt" as="script"><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(8).txt"></script><link rel="preload" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(9).txt" as="script"><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(9).txt"></script></head>
+<body data-cmplz="1" class="post-template-default single single-post postid-1064 single-format-standard wp-custom-logo ehf-header ehf-footer ehf-template-gecko ehf-stylesheet-gecko elementor-default elementor-kit-5 elementor-page elementor-page-1064 aa-prefix-gekko- mr-balise-body e--ua-blink e--ua-edge e--ua-webkit cmplz-marketing cmplz-statistics cmplz-preferences cmplz-functional cmplz-eu cmplz-optin" data-elementor-device-mode="desktop"><div id="cmplz-cookiebanner-container" class="cmplz-dismissed cmplz-soft-cookiewall"><div class="cmplz-cookiebanner banner-1 optin cmplz-center cmplz-categories-type-view-preferences cmplz-dismissed" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optin" aria-describedby="cmplz-message-1-optin">
+<div class="cmplz-header">
+<div class="cmplz-logo"></div>
+<div class="cmplz-title" id="cmplz-header-1-optin">Politique cookies</div>
+<div class="cmplz-close" tabindex="0" role="button" aria-label="close-dialog">
+<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+</div>
+</div>
+<div class="cmplz-divider cmplz-divider-header"></div>
+<div class="cmplz-body">
+<div class="cmplz-message" id="cmplz-message-1-optin">Nous utilisons des technologies telles que les cookies pour stocker et/ou accéder aux informations relatives aux appareils. Nous le faisons pour améliorer l’expérience de navigation et pour afficher des publicités personnalisées.<br>
+<br>
+Vous pouvez accepter tous les cookies et traitements nécessitant votre consentement, ou les refuser en cliquant sur "Continuer sans accepter", et en savoir plus, faire un choix plus granulaire ou vous opposer aux traitements basés sur des intérêts légitimes via l'écran de paramétrage. Vous pouvez changer d'avis ou retirer votre consentement à tout moment via la Politique de vie privée.</div>
+<!-- categories start -->
+<div class="cmplz-categories">
+<details class="cmplz-category cmplz-functional">
+<summary>
+<span class="cmplz-category-header">
+<span class="cmplz-category-title">Fonctionnel</span>
+<span class="cmplz-always-active">
+<span class="cmplz-banner-checkbox">
+<input type="checkbox" id="cmplz-functional-optin" data-category="cmplz_functional" class="cmplz-consent-checkbox cmplz-functional" size="40" value="1">
+<label class="cmplz-label" for="cmplz-functional-optin" tabindex="0"><span>Fonctionnel</span></label>
+</span>
+Toujours activé							</span>
+<span class="cmplz-icon cmplz-open">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"></path></svg>
+</span>
+</span>
+</summary>
+<div class="cmplz-description">
+<span class="cmplz-description-functional">Le stockage ou l’accès technique est strictement nécessaire dans la finalité d’intérêt légitime de permettre l’utilisation d’un service spécifique explicitement demandé par l’abonné ou l’utilisateur, ou dans le seul but d’effectuer la transmission d’une communication sur un réseau de communications électroniques.</span>
+</div>
+</details>
+<details class="cmplz-category cmplz-preferences">
+<summary>
+<span class="cmplz-category-header">
+<span class="cmplz-category-title">Préférences</span>
+<span class="cmplz-banner-checkbox">
+<input type="checkbox" id="cmplz-preferences-optin" data-category="cmplz_preferences" class="cmplz-consent-checkbox cmplz-preferences" size="40" value="1">
+<label class="cmplz-label" for="cmplz-preferences-optin" tabindex="0"><span>Préférences</span></label>
+</span>
+<span class="cmplz-icon cmplz-open">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"></path></svg>
+</span>
+</span>
+</summary>
+<div class="cmplz-description">
+<span class="cmplz-description-preferences">Le stockage ou l’accès technique est nécessaire dans la finalité d’intérêt légitime de stocker des préférences qui ne sont pas demandées par l’abonné ou l’utilisateur.</span>
+</div>
+</details>
+<details class="cmplz-category cmplz-statistics">
+<summary>
+<span class="cmplz-category-header">
+<span class="cmplz-category-title">Statistiques</span>
+<span class="cmplz-banner-checkbox">
+<input type="checkbox" id="cmplz-statistics-optin" data-category="cmplz_statistics" class="cmplz-consent-checkbox cmplz-statistics" size="40" value="1">
+<label class="cmplz-label" for="cmplz-statistics-optin" tabindex="0"><span>Statistiques</span></label>
+</span>
+<span class="cmplz-icon cmplz-open">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"></path></svg>
+</span>
+</span>
+</summary>
+<div class="cmplz-description">
+<span class="cmplz-description-statistics">Le stockage ou l’accès technique qui est utilisé exclusivement à des fins statistiques.</span>
+<span class="cmplz-description-statistics-anonymous">Le stockage ou l’accès technique qui est utilisé exclusivement dans des finalités statistiques anonymes. En l’absence d’une assignation à comparaître, d’une conformité volontaire de la part de votre fournisseur d’accès à internet ou d’enregistrements supplémentaires provenant d’une tierce partie, les informations stockées ou extraites à cette seule fin ne peuvent généralement pas être utilisées pour vous identifier.</span>
+</div>
+</details>
+<details class="cmplz-category cmplz-marketing">
+<summary>
+<span class="cmplz-category-header">
+<span class="cmplz-category-title">Marketing</span>
+<span class="cmplz-banner-checkbox">
+<input type="checkbox" id="cmplz-marketing-optin" data-category="cmplz_marketing" class="cmplz-consent-checkbox cmplz-marketing" size="40" value="1">
+<label class="cmplz-label" for="cmplz-marketing-optin" tabindex="0"><span>Marketing</span></label>
+</span>
+<span class="cmplz-icon cmplz-open">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18"><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"></path></svg>
+</span>
+</span>
+</summary>
+<div class="cmplz-description">
+<span class="cmplz-description-marketing">Le stockage ou l’accès technique est nécessaire pour créer des profils d’utilisateurs afin d’envoyer des publicités, ou pour suivre l’utilisateur sur un site web ou sur plusieurs sites web ayant des finalités marketing similaires.</span>
+</div>
+</details>
+</div><!-- categories end -->
+</div>
+<div class="cmplz-links cmplz-information">
+<a class="cmplz-link cmplz-manage-options cookie-statement" href="https://www.gekkode.com/politique-de-cookies-ue/#cmplz-manage-consent-container" data-relative_url="#cmplz-manage-consent-container">Gérer les options</a>
+<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="https://www.gekkode.com/politique-de-cookies-ue/#cmplz-cookies-overview" data-relative_url="#cmplz-cookies-overview">Gérer les services</a>
+<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="https://www.gekkode.com/politique-de-cookies-ue/#cmplz-tcf-wrapper" data-relative_url="#cmplz-tcf-wrapper">Gérer les fournisseurs</a>
+<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/">En savoir plus sur ces finalités</a>
+</div>
+<div class="cmplz-divider cmplz-footer"></div>
+<div class="cmplz-buttons">
+<button class="cmplz-btn cmplz-accept">Accepter</button>
+<button class="cmplz-btn cmplz-deny">continuer sans accepter</button>
+<button class="cmplz-btn cmplz-view-preferences">Voir les préférences</button>
+<button class="cmplz-btn cmplz-save-preferences">Enregistrer les préférences</button>
+<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="https://www.gekkode.com/politique-de-cookies-ue/#cmplz-manage-consent-container" data-relative_url="#cmplz-manage-consent-container">Voir les préférences</a>
+</div>
+<div class="cmplz-links cmplz-documents">
+<a class="cmplz-link cookie-statement" href="https://www.gekkode.com/politique-de-cookies-ue/" data-relative_url="">Politique de cookies </a>
+<a class="cmplz-link privacy-statement" href="https://www.gekkode.com/politique-de-confidentialite/" data-relative_url="">Politique de confidentialité</a>
+<a class="cmplz-link impressum cmplz-hidden" href="https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#" data-relative_url="">{title}</a>
+</div>
+</div>
+</div>
+<!-- #page -->
+<!-- GA Google Analytics @ https://m0n.co/ga -->
+
+
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+
+
+
+<!-- <link rel='stylesheet' id='e-animations-css' href='https://www.gekkode.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.7.8' type='text/css' media='all' /> -->
+
+
+<!-- <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://www.gekkode.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' type='text/css' media='all' /> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mr-wrapper" style="height: auto !important;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div id="page" class="hfeed site">
+<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+<p class="main-title bhf-hidden" itemprop="headline"><a href="https://www.gekkode.com/" title="Gekkode" rel="home">Gekkode</a></p>
+<div data-elementor-type="wp-post" data-elementor-id="9" class="elementor elementor-9">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-5e55790 elementor-section-content-middle header-position-absolute elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5e55790" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-965723f" data-id="965723f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a8e7737 elementor-widget elementor-widget-html" data-id="a8e7737" data-element_type="widget" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<a href="https://www.gekkode.com/">
+<svg id="aa3a380a-c317-4d97-bd14-d4ec93c3361b" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 298.96 58.22" width="150">
+<defs>
+<lineargradient id="a4c97c0b-5fd8-4437-a449-1bf74b769ad1" data-name="Dégradé sans nom 2" x1="-366.93" y1="-451.17" x2="-283.32" y2="-486.03" gradientTransform="matrix(1, 0, 0, -1, 536.36, -407.49)" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#fff"></stop>
+<stop offset="1"></stop>
+</lineargradient>
+<clippath id="a7cf484d-3c5b-4e4e-98ca-3f1b8ae4e422">
+<polygon points="1 1 2 1 1 2 1 1" style="fill: none"></polygon>
+</clippath>
+<clippath id="bb475d8f-9e9f-452f-aa78-08f0a6bce9cd" transform="translate(-24.5 -25.68)">
+<polygon points="-1 -1 -2 -1 -1 -2 -1 -1" style="fill: none;clip-path: url(#a7cf484d-3c5b-4e4e-98ca-3f1b8ae4e422)"></polygon>
+</clippath>
+<mask id="a8e306c5-a4b7-40d3-92c6-91ae440db924" x="182.35" y="26.52" width="27.36" height="25.58" maskUnits="userSpaceOnUse">
+<g transform="translate(-24.5 -25.68)">
+<g id="e69e7974-ff8c-4c3b-92e0-1ec58d1a799b" data-name="SVGID">
+<rect x="206.85" y="52.2" width="27.36" height="25.58" style="fill: url(#a4c97c0b-5fd8-4437-a449-1bf74b769ad1)"></rect>
+</g>
+</g>
+</mask>
+</defs>
+<g>
+<g>
+<path d="M68.6,48.48H61.44c-2.5-5.32-7.49-8.41-13.93-8.41-9.66,0-16.89,7-16.89,18S37.85,76,47.51,76c9,0,15.18-5.78,16.1-14.85H45.34V56.3H70v4.6A22.22,22.22,0,0,1,47.5,81.4c-12.88,0-23-9.59-23-23.33s10.12-23.39,23-23.39C57.16,34.68,65.18,39.68,68.6,48.48Z" transform="translate(-24.5 -25.68)" style="fill: #fff"></path>
+<g>
+<rect x="87.08" y="9.53" width="5.98" height="45.8" style="fill: #fff"></rect>
+<polygon points="98.78 32.46 119.54 9.53 111.99 9.53 95.36 28.17 95.36 36.98 111.92 55.33 119.74 55.33 98.78 32.46" style="fill: #fff"></polygon>
+</g>
+<g>
+<rect x="125.46" y="9.2" width="11.24" height="46.13" style="fill: #fff"></rect>
+<polygon points="165.94 55.33 158.65 46.08 158.65 46.08 147.41 31.81 165.28 9.2 152.08 9.2 139.02 26.38 139.02 38.01 147.06 48.57 147.06 48.57 148.8 50.86 151.54 54.45 151.54 54.45 152.21 55.33 165.94 55.33" style="fill: #fff"></polygon>
+</g>
+<path d="M264.71,34.88H261v9.59h3c8.48,0,13.47,5,13.47,13.47s-5,13.34-13.47,13.34h-5.32V34.88H247.44V81h17.28c14.72,0,24.18-9.4,24.18-23.07S279.43,34.88,264.71,34.88Z" transform="translate(-24.5 -25.68)" style="fill: #fff"></path>
+<g>
+<rect x="61.71" y="29.7" width="14.33" height="4.93" style="fill: #fff"></rect>
+<polygon points="78.01 9.46 53.37 9.46 53.37 55.33 78.01 55.33 78.01 50.4 59.35 50.4 59.35 34.63 59.41 34.63 59.41 29.7 59.35 29.7 59.35 14.39 78.01 14.39 78.01 9.46" style="fill: #fff"></polygon>
+</g>
+<g>
+<rect x="284.27" y="27.53" width="12.72" height="8.67" style="fill: #fff"></rect>
+<polygon points="298.96 9.2 270.7 9.2 270.7 55.33 298.96 55.33 298.96 46.33 281.94 46.33 281.94 36.21 281.97 36.21 281.97 27.53 281.94 27.53 281.94 18.2 298.96 18.2 298.96 9.2" style="fill: #fff"></polygon>
+</g>
+</g>
+<path d="M239.81,37.81a7.55,7.55,0,1,0-6.21,8.68A7.55,7.55,0,0,0,239.81,37.81Zm-6.69,5.8a4.62,4.62,0,1,1,2.1-8.17,2,2,0,1,0,.89,1.35,1.92,1.92,0,0,0-.47-1,4.61,4.61,0,0,1-2.52,7.8Z" transform="translate(-24.5 -25.68)" style="fill: #fff;fill-rule: evenodd"></path>
+<g>
+<path d="M215.61,53.26a12.88,12.88,0,0,1,1.5-1h0a18.48,18.48,0,0,0-1.62.94l.14.12" transform="translate(-24.5 -25.68)" style="fill: #93c01f;fill-rule: evenodd"></path>
+<g style="clip-path: url(#bb475d8f-9e9f-452f-aa78-08f0a6bce9cd)">
+<g style="mask: url(#a8e306c5-a4b7-40d3-92c6-91ae440db924)">
+<path d="M223.7,69.08Z" transform="translate(-24.5 -25.68)" style="fill: #93c01f;fill-rule: evenodd"></path>
+</g>
+</g>
+<path d="M232.4,57.92c-6.05-4.6-17.06-1.06-15,9a6.92,6.92,0,0,0,5.4,5.69c4,.69,8.14-3.8,5.77-6.89a3.09,3.09,0,0,1-.46,3.28c-2.59,3-6.85-.62-5.39-4.62,1-2.69,4.83-2.84,7.13-.91,3.16,2.66,2,10-3.82,11.32a12,12,0,0,1-9.36-2.12c-7.45-5.17-7.39-15.77.4-20.45h0l-1,.56c-8.68,5.41-11.73,21.46,1.36,28.38,9.77,1.2,16-3.32,18.32-8.91C237.87,67.19,236.82,61.29,232.4,57.92Z" transform="translate(-24.5 -25.68)" style="fill: #e74c3c;fill-rule: evenodd"></path>
+<path d="M217.1,52.2l-.27-.21.08.07c-19.74,1.71-20.43,17.75-20.45,18.29,3.18,5.87,9.39,10.91,17.19,13.55A19.12,19.12,0,0,1,217.1,52.2Z" transform="translate(-24.5 -25.68)" style="fill: #e74c3c;fill-rule: evenodd"></path>
+<path d="M233.83,47.87A8.94,8.94,0,1,1,238,32.16a14.74,14.74,0,0,0-12.76-6.47l-14.71.6.6,14.71a14.78,14.78,0,0,0,15.31,14.12l14.71-.6-.5-12.25A8.92,8.92,0,0,1,233.83,47.87Z" transform="translate(-24.5 -25.68)" style="fill: #e74c3c;fill-rule: evenodd"></path>
+<path d="M213.5,51.73A18.54,18.54,0,0,1,210.58,48c-2.64-4.27-2.52-13.28-2.24-18.07a26,26,0,0,0-8.52,5.49h0a26,26,0,0,0-6.31,9.62,35.48,35.48,0,0,0-.26,28.2A20.36,20.36,0,0,1,213.5,51.73Z" transform="translate(-24.5 -25.68)" style="fill: #e74c3c;fill-rule: evenodd"></path>
+</g>
+</g>
+</svg>
+</a> 
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-654d66e" data-id="654d66e" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-48903ae hfe-submenu-icon-arrow hfe-submenu-animation-none hfe-link-redirect-child hfe-nav-menu__breakpoint-tablet elementor-widget elementor-widget-navigation-menu" data-id="48903ae" data-element_type="widget" data-settings="{&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:250,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="navigation-menu.default">
+<div class="elementor-widget-container">
+<div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none" data-layout="horizontal">
+<div class="hfe-nav-menu__toggle elementor-clickable" aria-haspopup="true" aria-expanded="false">
+<div class="hfe-nav-menu-icon">
+<i aria-hidden="true" tabindex="0" class="fas fa-bars"></i>					</div>
+</div>
+<nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow" data-toggle-icon="&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;" data-close-icon="&lt;i aria-hidden=&quot;true&quot; tabindex=&quot;0&quot; class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;" data-full-width="yes"><ul id="menu-1-48903ae" class="hfe-nav-menu"><li id="menu-item-4063" class="menu-item menu-item-type-taxonomy menu-item-object-category parent hfe-creative-menu"><a href="https://www.gekkode.com/category/seo/" class="hfe-menu-item">SEO</a></li>
+<li id="menu-item-3494" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu parent-has-child"><div class="hfe-has-submenu-container"><a href="https://www.gekkode.com/category/developpement/" class="hfe-menu-item" aria-haspopup="true" aria-expanded="false">Développement<span class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a></div>
+<ul class="sub-menu">
+<li id="menu-item-3498" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent hfe-creative-menu"><a href="https://www.gekkode.com/category/developpement/css/" class="hfe-sub-menu-item">CSS</a></li>
+<li id="menu-item-3499" class="menu-item menu-item-type-taxonomy menu-item-object-category hfe-creative-menu"><a href="https://www.gekkode.com/category/developpement/html/" class="hfe-sub-menu-item">HTML</a></li>
+<li id="menu-item-3495" class="menu-item menu-item-type-taxonomy menu-item-object-category hfe-creative-menu"><a href="https://www.gekkode.com/category/developpement/javascript/" class="hfe-sub-menu-item">Javascript</a></li>
+<li id="menu-item-3496" class="menu-item menu-item-type-taxonomy menu-item-object-category hfe-creative-menu"><a href="https://www.gekkode.com/category/developpement/laravel/" class="hfe-sub-menu-item">Laravel</a></li>
+<li id="menu-item-3497" class="menu-item menu-item-type-taxonomy menu-item-object-category hfe-creative-menu"><a href="https://www.gekkode.com/category/developpement/php/" class="hfe-sub-menu-item">PHP</a></li>
+<li id="menu-item-3500" class="menu-item menu-item-type-taxonomy menu-item-object-category hfe-creative-menu"><a href="https://www.gekkode.com/category/developpement/wordpress/" class="hfe-sub-menu-item">WordPress</a></li>
+</ul>
+</li>
+<li id="menu-item-3492" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu parent-has-child"><div class="hfe-has-submenu-container"><a href="https://www.gekkode.com/category/developpement/tutoriel/" class="hfe-menu-item" aria-haspopup="true" aria-expanded="false">Tutoriels<span class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a></div>
+<ul class="sub-menu">
+<li id="menu-item-3493" class="menu-item menu-item-type-post_type menu-item-object-post hfe-creative-menu"><a href="https://www.gekkode.com/developpement/laravel/tutoriel-laravel-8-pour-les-debutants/" class="hfe-sub-menu-item">Tutoriel Laravel 9 pour les débutants</a></li>
+<li id="menu-item-7173" class="menu-item menu-item-type-post_type menu-item-object-post hfe-creative-menu"><a href="https://www.gekkode.com/developpement/tutoriel-vuejs-3-pour-les-debutants/" class="hfe-sub-menu-item">Tutoriel VueJS 3 pour les débutants</a></li>
+<li id="menu-item-5828" class="menu-item menu-item-type-post_type menu-item-object-post hfe-creative-menu"><a href="https://www.gekkode.com/developpement/tutoriel-webpack-5-pour-les-debutants/" class="hfe-sub-menu-item">Tutoriel Webpack 5 pour les débutants</a></li>
+</ul>
+</li>
+<li id="menu-item-9199" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children parent hfe-has-submenu hfe-creative-menu parent-has-child"><div class="hfe-has-submenu-container"><a href="https://www.gekkode.com/developpement/realiser-une-carte-en-css-card-ui-css/#" class="hfe-menu-item" aria-haspopup="true" aria-expanded="false">Outils en ligne<span class="hfe-menu-toggle sub-arrow hfe-menu-child-0"><i class="fa"></i></span></a></div>
+<ul class="sub-menu">
+<li id="menu-item-9197" class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu"><a href="https://www.gekkode.com/base64-encode/" class="hfe-sub-menu-item">Base64 encode&nbsp;</a></li>
+<li id="menu-item-9198" class="menu-item menu-item-type-post_type menu-item-object-page hfe-creative-menu"><a href="https://www.gekkode.com/base64-decode/" class="hfe-sub-menu-item">Base64 decode</a></li>
+</ul>
+</li>
+</ul></nav>              
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-83fe8f2" data-id="83fe8f2" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-baacbb7 hfe-search-layout-icon_text elementor-widget elementor-widget-hfe-search-button" data-id="baacbb7" data-element_type="widget" data-settings="{&quot;size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:50,&quot;sizes&quot;:[]},&quot;size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;icon_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;16&quot;,&quot;sizes&quot;:[]},&quot;icon_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;icon_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;button_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;button_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;button_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_icon_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;20&quot;,&quot;sizes&quot;:[]},&quot;close_icon_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_icon_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="hfe-search-button.default">
+<div class="elementor-widget-container">
+<form class="hfe-search-button-wrapper" role="search" action="https://www.gekkode.com/" method="get">
+<div class="hfe-search-form__container" role="tablist">
+<input placeholder="Saisissez et appuyez sur « Entrée »..." class="hfe-search-form__input" type="search" name="s" title="Recherche" value="">
+<button id="clear-with-button" type="reset">
+<i class="fas fa-times" aria-hidden="true"></i>
+</button>
+<button class="hfe-search-submit" type="submit">
+<i class="fas fa-search" aria-hidden="true"></i>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</header>
+<main class="site-main-elementor" role="main" style="height: auto !important;">
+<div data-elementor-type="wp-post" data-elementor-id="633" class="elementor elementor-633" style="height: auto !important;">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-51e23b19 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="51e23b19" data-element_type="section">
+<div class="elementor-background-overlay"></div>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-426e7e28" data-id="426e7e28" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-231a78d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="231a78d7" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4b1b64bd" data-id="4b1b64bd" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-06f3131 title-no-margin elementor-widget elementor-widget-page-title" data-id="06f3131" data-element_type="widget" data-widget_type="page-title.default">
+<div class="elementor-widget-container">
+<div class="hfe-page-title hfe-page-title-wrapper elementor-widget-heading">
+<h1 class="elementor-heading-title elementor-size-default">
+Réaliser une carte en CSS ( Card UI CSS )  
+</h1> 
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-52c2572 elementor-widget elementor-widget-post-date" data-id="52c2572" data-element_type="widget" data-widget_type="post-date.default">
+<div class="elementor-widget-container">
+<div class="carredas-elementor-post-published">
+2 novembre, 2022
+</div>		</div>
+</div>
+<div class="elementor-element elementor-element-f3940d3 elementor-widget elementor-widget-post-terms" data-id="f3940d3" data-element_type="widget" data-widget_type="post-terms.default">
+<div class="elementor-widget-container">
+<div class="carredas-elementor-post-terms-wrapper"><a href="https://www.gekkode.com/category/developpement/css/" class="post-term post-term-33 post-term-css">CSS</a><a href="https://www.gekkode.com/category/developpement/" class="post-term post-term-8 post-term-developpement">Développement</a><a href="https://www.gekkode.com/category/developpement/tutoriel/" class="post-term post-term-30 post-term-tutoriel">Tutoriels</a></div>		</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-db50c2d" data-id="db50c2d" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-55b191d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="55b191d" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-587db54" data-id="587db54" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-f6fe13f elementor-section-height-min-height elementor-section-boxed elementor-section-height-default" data-id="f6fe13f" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1589f77" data-id="1589f77" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-47d2134" data-id="47d2134" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-9869e19 elementor-widget elementor-widget-post-thumbnail" data-id="9869e19" data-element_type="widget" data-widget_type="post-thumbnail.default">
+<div class="elementor-widget-container">
+<img width="1280" height="720" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/tutoriel-card-css.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" srcset="https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css.png 1280w, https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css-300x169.png 300w, https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css-1024x576.png 1024w, https://www.gekkode.com/wp-content/uploads/2017/02/tutoriel-card-css-768x432.png 768w" sizes="(max-width: 1280px) 100vw, 1280px">                                            		</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-27ac822e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="27ac822e" data-element_type="section" style="height: auto !important;">
+<div class="elementor-container elementor-column-gap-custom" style="height: auto !important;">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2588292e" data-id="2588292e" data-element_type="column" style="height: auto !important; min-height: 0px !important;">
+<div class="elementor-widget-wrap elementor-element-populated" style="height: auto !important;">
+<div class="elementor-element elementor-element-7a39e1a elementor-hidden-phone elementor-widget elementor-widget-shortcode" data-id="7a39e1a" data-element_type="widget" data-widget_type="shortcode.default">
+<div class="elementor-widget-container">
+<div class="elementor-shortcode"><script async="" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(7).txt" crossorigin="anonymous" data-checked-head="true"></script><ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-2163891761602124" data-ad-slot="9276197368" data-ad-format="auto" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_1_host" style="border: none; height: 280px; width: 727px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:727px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="727" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/ads.html" data-google-container-id="a!2" data-google-query-id="CIad3dnr4vsCFVYsaAodHnkKKA" data-load-complete="true"></iframe></div></ins>
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-8d7b4e7 elementor-widget elementor-widget-post-content" data-id="8d7b4e7" data-element_type="widget" data-widget_type="post-content.default">
+<div class="elementor-widget-container">
+<div data-elementor-type="wp-post" data-elementor-id="1064" class="elementor elementor-1064">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-7cf06d6b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7cf06d6b" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-39cdaedc" data-id="39cdaedc" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-37342c7 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="37342c7" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=N_kBlkUofio&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.8 - 02-10-2022 */
+.elementor-widget-video .elementor-widget-container{overflow:hidden;-webkit-transform:translateZ(0);transform:translateZ(0)}.elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:50%}.elementor-widget-video .elementor-custom-embed-image-overlay{cursor:pointer;text-align:center}.elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i{opacity:1}.elementor-widget-video .elementor-custom-embed-image-overlay img{display:block;width:100%}.elementor-widget-video .e-hosted-video .elementor-video{-o-object-fit:cover;object-fit:cover}.e-container>.elementor-widget-video{width:var(--container-widget-width,100%)}</style>		<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+<iframe class="elementor-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Tutoriel CSS - Réaliser une carte en CSS ( Card UI )" width="640" height="360" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/N_kBlkUofio.html" id="widget2"></iframe>		</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-768b709 elementor-widget elementor-widget-alert" data-id="768b709" data-element_type="widget" data-widget_type="alert.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.8 - 02-10-2022 */
+.elementor-alert{padding:15px;border-left:5px solid transparent;position:relative;text-align:left}.elementor-alert .elementor-alert-title{display:block;font-weight:700}.elementor-alert .elementor-alert-description{font-size:13px}.elementor-alert button.elementor-alert-dismiss{position:absolute;right:var(--dismiss-icon-horizontal-position,10px);top:var(--dismiss-icon-vertical-position,10px);padding:3px;font-size:var(--dismiss-icon-size,20px);line-height:1;background:transparent;color:var(--dismiss-icon-normal-color,inherit);border:none;cursor:pointer;-webkit-transition-duration:var(--dismiss-icon-hover-transition-duration,.3s);-o-transition-duration:var(--dismiss-icon-hover-transition-duration,.3s);transition-duration:var(--dismiss-icon-hover-transition-duration,.3s)}.elementor-alert button.elementor-alert-dismiss:hover{color:var(--dismiss-icon-hover-color,inherit)}.elementor-alert button.elementor-alert-dismiss svg{width:var(--dismiss-icon-size,20px);height:var(--dismiss-icon-size,20px);fill:var(--dismiss-icon-normal-color,currentColor);-webkit-transition-duration:var(--dismiss-icon-hover-transition-duration,.3s);-o-transition-duration:var(--dismiss-icon-hover-transition-duration,.3s);transition-duration:var(--dismiss-icon-hover-transition-duration,.3s)}.elementor-alert button.elementor-alert-dismiss svg:hover{fill:var(--dismiss-icon-hover-color,currentColor)}.elementor-alert.elementor-alert-info{color:#31708f;background-color:#d9edf7;border-color:#bcdff1}.elementor-alert.elementor-alert-success{color:#3c763d;background-color:#dff0d8;border-color:#cae6be}.elementor-alert.elementor-alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#f9f0c3}.elementor-alert.elementor-alert-danger{color:#a94442;background-color:#f2dede;border-color:#e8c4c4}@media (max-width:767px){.elementor-alert{padding:10px}.elementor-alert button.elementor-alert-dismiss{right:7px;top:7px}}</style>		<div class="elementor-alert elementor-alert-info" role="alert">
+<span class="elementor-alert-title">Article mis à jour</span>
+<span class="elementor-alert-description">L'article suivant a été mis à jour avec l'ajout d'une vidéo youtube le 2 novembre 2022.</span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-4c7f7188 elementor-widget elementor-widget-text-editor" data-id="4c7f7188" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.8 - 02-10-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<div>
+Dans ce tutoriel, je vais vous montrer comment réaliser une carte ( «&nbsp;card&nbsp;» en anglais ). Une carte est utilisée pour montrer à un utilisateur un extrait d’un article avec son visuel pour l’inciter à cliquer sur l’article et à le lire. Réalisée uniquement avec du l’HTML et du CSS. j’ai voulu utiliser une propriété peu utilisée en CSS, la propriété <code>filter</code> qui permet d’appliquer un traitement sur une image, j’ai ajouté également une transition pour lui donner du dynamisme.
+<div class="cp_embed_wrapper"><iframe allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="cp_embed_iframe " frameborder="0" height="300" width="100%" name="cp_embed_1" scrolling="no" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/LxozMK(1).html" style="width: 100%; overflow:hidden; display:block;" title="CodePen Embed" loading="lazy" id="cp_embed_LxozMK"></iframe></div>
+<script async="" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/ei.js.télécharger"></script>
+<h3>Étape 1 – Schématiser et mettre en place le code HTML</h3>
+Pour pouvoir mettre en place le code HTML, vous devriez imaginer en premier sa structure. Lorsque vous avez une maquette, prenez bien le temps d’imaginer la structure de votre site ou de vos modules CSS. N’hésitez pas à faire des croquis sur une feuille pour le schématiser. Un code HTML bien structuré va faciliter par la suite votre développement&nbsp;!
+<img decoding="async" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/Realiser-une-carte-en-CSS-Card-UI-CSS.png" alt="schema-card.png">
+<pre class=" language-html"><code class=" language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.gekkode.com/blog/post/#<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Image à la une --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-image<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://www.gekkode.com/wp-content/uploads/2021/08/orange.jpeg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Orange<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Fin de l'image à la une --&gt;</span>
+
+        <span class="token comment">&lt;!-- Corp de notre carte --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-body<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- Date de publication de l'article--&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-date<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>time</span><span class="token punctuation">&gt;</span></span>20 Novembre 1992<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>time</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token comment">&lt;!-- Titre de l'article --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Lorem Ipsum<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment">&lt;!-- Extrait de l'article --&gt;</span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>card-excerpt<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam voluptatibus autem consectetur voluptate facere at, omnis ab optio placeat officiis! Animi modi harum enim quia veniam consectetur unde autem inventore.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- Fin du corp de notre carte --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h3>Étape 2 – Définir les règles de base et styliser notre module</h3>
+Une fois que vous avez mis les bases de votre HTML, nous allons commencer à coder en CSS. Pour cela on va reprendre chaque partie de notre schéma.
+<h4>.card</h4>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">.card</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span> <span class="token comment">/*1*/</span>
+  <span class="token property">margin</span><span class="token punctuation">:</span> 0px auto<span class="token punctuation">;</span> <span class="token comment">/*2*/</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span> <span class="token comment">/*3*/</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0px 5px 20px #999<span class="token punctuation">;</span> <span class="token comment">/*4*/</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.card a</span> <span class="token punctuation">{</span> <span class="token comment">/*5*/</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #333<span class="token punctuation">;</span> 
+  <span class="token property">text-decoration</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.card:hover .card-image img</span> <span class="token punctuation">{</span> <span class="token comment">/*6*/</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 160%<span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">grayscale</span><span class="token punctuation">(</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ol>
+<li>On définit une taille fixe à notre carte.</li>
+<li>On le centre avec la méthode <code>margin: 0px auto</code>, attention à bien être en <code>display: block</code>.</li>
+<li>On le met en blanc, par défaut j’ai mis un background légèrement plus foncé sur le <code>body</code> pour bien différencier la carte de notre corps de base.</li>
+<li>On lui ajoute une petite ombre pour créer un effet de superposition par rapport à notre page.</li>
+<li>On définit le style de base de nos liens à l’intérieur de notre module <code>.card</code>.</li>
+<li>Pour apporter du dynamisme, comme je l’ai dit précédemment, nous allons indiquer au navigateur qu’une fois que le visiteur survole notre carte, il agrandit via <code>width</code> et qu’il réaffiche les couleurs car nous allons définir par défaut un filtre noir et blanc sur notre image à partir de <code>.card-image</code>.</li>
+</ol>
+<h4>.card-image</h4>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">.card-image</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span><span class="token comment">/*1*/</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span><span class="token comment">/*2*/</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><span class="token comment">/*3*/</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.card-image img</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 150%<span class="token punctuation">;</span><span class="token comment">/*4*/</span>
+    <span class="token comment">/*5 - Méthode de centrage en fonction de la taille de l'image */</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translate</span><span class="token punctuation">(</span>-50%, -50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">grayscale</span><span class="token punctuation">(</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">/*6*/</span>
+    <span class="token comment">/*7 - Transition */</span>
+  <span class="token property">transition-property</span><span class="token punctuation">:</span> filter width<span class="token punctuation">;</span> 
+  <span class="token property">transition-duration</span><span class="token punctuation">:</span> .3s<span class="token punctuation">;</span>
+  <span class="token property">transition-timing-function</span><span class="token punctuation">:</span> ease<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<ol>
+<li>On fixe la taille du bloc qui va contenir notre image, cette taille fixe va nous permettre de respecter la taille entre toute les images dans le cas où il y aurait plusieurs cartes.</li>
+<li>On fixe la position de notre élément en <code>relative</code> car il va contenir des éléments <code>absolute</code> à l’intérieur de lui.</li>
+<li>On cache tous les éléments qui peuvent déborder de notre bloc.</li>
+<li>On fixe la taille de notre image à <strong>100%</strong>, Vous pouvez augmenter la taille par défaut en fonction de vos besoins mais n’ajoutez pas des images inférieures à <strong>400px</strong> et n’oubliez pas de respecter son ratio largeur/hauteur pour éviter du blanc.</li>
+<li>Cette méthode que vous voyez permet de centrer une image par rapport à sa taille et à son élément parent. Le but est que le point d’origine de son affichage soit le centre de <code>.card-image</code>, puis avec <code>transform</code> nous redéfinissons son emplacement par rapport à la taille de l’image pour l’avoir bien au centre de <code>.card-image</code>.</li>
+<li>la propriété <code>filter</code> permet d’appliquer un filtre sur une image, ici nous voulons appliquer un filtre noir et blanc <code>grayscale</code> par défaut à notre image, le but est de lui redonner ses couleurs une fois que l’utilisateur survole notre carte.</li>
+<li>Pour donner du dynanisme, nous allons appliquer sur les deux propriétés <code>filter</code> et <code>width</code> un effet de transition de 300ms.</li>
+</ol>
+<h4>.card-body</h4>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">.card-body</span> <span class="token punctuation">{</span>
+    <span class="token property">text-align</span><span class="token punctuation">:</span>center<span class="token punctuation">;</span>  <span class="token comment">/*1*/</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 15px 20px<span class="token punctuation">;</span> <span class="token comment">/*2*/</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span> <span class="token comment">/*3*/</span>
+<span class="token punctuation">}</span></code></pre>
+<ol>
+<li>Nous allignons tous les éléments à l’intérieur de <code>.card-body</code>.</li>
+<li>Pour éviter que nos éléments soit coller, nous allons appliquer un rembourage avec la propriété <code>padding</code>.</li>
+<li>Puis nous appliquons si c’est pas déjà fait par défaut le <code>box-sizing</code> avec sa valeur <code>border-box</code> pour que le padding soit inclus dans notre bloc et pas en plus du bloc.</li>
+</ol>
+<h4>La typographie</h4>
+<pre class=" language-css"><code class=" language-css"><span class="token selector">.card-date</span> <span class="token punctuation">{</span>
+  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Source Sans Pro'</span>, sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-title, .card-excerpt</span> <span class="token punctuation">{</span>
+   <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'Playfair Display'</span>, serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-date, .card-title</span> <span class="token punctuation">{</span>
+  <span class="token property">text-align</span><span class="token punctuation">:</span>center<span class="token punctuation">;</span>
+  <span class="token property">text-transform</span><span class="token punctuation">:</span>uppercase<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.card-date, .card-excerpt</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #777<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+Vous l’aurez compris on définit le style du texte, ici j’ai utilisé <code>Source Sans Pro</code> sans-serif et <code>Playfair Display</code> en serif comme typo et quelques ajustements de mise en forme pour le texte.
+</div>						</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="page-content">
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-15432d4 elementor-hidden-phone elementor-widget elementor-widget-shortcode" data-id="15432d4" data-element_type="widget" data-widget_type="shortcode.default">
+<div class="elementor-widget-container">
+<div class="elementor-shortcode"><script async="" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(7).txt" crossorigin="anonymous" data-checked-head="true"></script><ins class="adsbygoogle" style="display: block; height: 345px;" data-ad-client="ca-pub-2163891761602124" data-ad-slot="5520661477" data-ad-format="auto" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_2_host" style="border: none; height: 345px; width: 727px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: hidden;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 727px; height: 345px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="727" height="345" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CILrjtrr4vsCFQsF1QodqDIBYQ" data-load-complete="true"></iframe></div></ins>
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-62d1c727" data-id="62d1c727" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="height: auto !important; min-height: 0px !important;">
+<div class="elementor-widget-wrap elementor-element-populated" style="height: auto !important;">
+<div class="elementor-element elementor-element-babe9cf elementor-widget elementor-widget-shortcode" data-id="babe9cf" data-element_type="widget" data-widget_type="shortcode.default" style="height: auto !important;">
+<div class="elementor-widget-container" style="height: auto !important;">
+<div class="elementor-shortcode" style="height: auto !important;">		<div data-elementor-type="wp-post" data-elementor-id="7600" class="elementor elementor-7600" style="height: auto !important;">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-a43c279 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a43c279" data-element_type="section" style="height: auto !important;">
+<div class="elementor-container elementor-column-gap-default" style="height: auto !important;">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b61b6ba" data-id="b61b6ba" data-element_type="column" style="height: auto !important; min-height: 0px !important;">
+<div class="elementor-widget-wrap elementor-element-populated" style="height: auto !important;">
+<div class="elementor-element elementor-element-5376948 elementor-widget elementor-widget-html" data-id="5376948" data-element_type="widget" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<style>
+.postid-7321 #decouvrez-aussi {
+display: none;
+}
+.gekkode-a-d-s .elementor-shortcode {
+display: flex;
+justify-content: center;
+}
+</style>		</div>
+</div>
+<div class="elementor-element elementor-element-e85a2c2 elementor-widget elementor-widget-shortcode" data-id="e85a2c2" data-element_type="widget" data-widget_type="shortcode.default">
+<div class="elementor-widget-container">
+<div class="elementor-shortcode"><script async="" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(7).txt" crossorigin="anonymous" data-checked-head="true"></script><ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-2163891761602124" data-ad-slot="" data-ad-format="auto" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_3_host" style="border: none; height: 250px; width: 325px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;border:0;width:325px;height:250px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="325" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/ads(2).html" data-google-container-id="a!4" data-google-query-id="COLq3dnr4vsCFbcH1QodkNUNtg" data-load-complete="true"></iframe></div></ins>
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-3b36b30 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3b36b30" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b69f781" data-id="b69f781" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-75f5b22 elementor-shape-circle elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="75f5b22" data-element_type="widget" data-widget_type="social-icons.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.8 - 02-10-2022 */
+.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);-webkit-box-pack:var(--justify-content,center);-ms-flex-pack:var(--justify-content,center);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));height:calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;background-color:#818a91;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#818a91}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow elementor-repeater-item-2d6d7f8" href="https://twitter.com/GekkodeOfficiel" target="_blank">
+<span class="elementor-screen-only">Twitter</span>
+<i class="fab fa-twitter"></i>					</a>
+</span>
+<span class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-ec381eb" href="https://www.youtube.com/channel/UCDJRtHUWCxpkeNUgNMWw3zw" target="_blank">
+<span class="elementor-screen-only">Youtube</span>
+<i class="fab fa-youtube"></i>					</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-fecf891 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fecf891" data-element_type="section" id="decouvrez-aussi">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ce9c215" data-id="ce9c215" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-8c17293 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c17293" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-42a57fb" data-id="42a57fb" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b49b5af elementor-widget elementor-widget-heading" data-id="b49b5af" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.8 - 02-10-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h3 class="elementor-heading-title elementor-size-default">Nouvelle vidéo</h3>		</div>
+</div>
+<div class="elementor-element elementor-element-d422603 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="d422603" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/nxEW2xKho-U&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+<div class="elementor-widget-container">
+<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+<iframe class="elementor-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="Tutoriel CSS -  Barre de progression css" width="640" height="360" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/nxEW2xKho-U.html" id="widget4"></iframe>		</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-a8243dd elementor-widget elementor-widget-text-editor" data-id="a8243dd" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p style="text-align: center;"><a href="https://youtu.be/nxEW2xKho-U" target="_blank" rel="nofollow noopener">Barre de progression en css</a></p>						</div>
+</div>
+<div class="elementor-element elementor-element-4aa2323 elementor-align-center elementor-widget elementor-widget-carredas-button" data-id="4aa2323" data-element_type="widget" data-widget_type="carredas-button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a href="https://www.gekkode.com/developpement/comment-creer-une-barre-de-progression-en-html-et-css-css-progress-bar/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+<span class="elementor-button-content-wrapper elementor-content-align-icon-">
+<span class="elementor-button-text">Lire l'article</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-17ac4604 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="17ac4604" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-70bd4615" data-id="70bd4615" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-2e62a4cd elementor-widget elementor-widget-heading" data-id="2e62a4cd" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h3 class="elementor-heading-title elementor-size-default">Newsletter</h3>		</div>
+</div>
+<div class="elementor-element elementor-element-12638ef3 elementor-widget elementor-widget-text-editor" data-id="12638ef3" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p style="margin-bottom:0px;">Ne manquez jamais les nouveaux conseils, tutoriels et autres.</p>						</div>
+</div>
+<div class="elementor-element elementor-element-289b6586 elementor-widget elementor-widget-shortcode" data-id="289b6586" data-element_type="widget" data-widget_type="shortcode.default">
+<div class="elementor-widget-container">
+<div class="elementor-shortcode"><div class="tnp tnp-subscription">
+<form method="post" action="https://gekkode.com/?na=s">
+<input type="hidden" name="nl[&#39;code&#39;]" value="1" required="">
+<input type="hidden" name="nlang" value=""><div class="tnp-field tnp-field-email"><label for="tnp-email">Email</label>
+<input class="tnp-email" type="email" name="ne" value="" required=""></div>
+<div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="S&#39;abonner">
+</div>
+</form>
+</div></div>
+</div>
+</div>
+<div class="elementor-element elementor-element-7e5067b9 elementor-widget elementor-widget-text-editor" data-id="7e5067b9" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p style="margin-bottom:0px;">Pas de spam, jamais. Nous ne partagerons jamais votre adresse électronique et vous pouvez vous désabonner à tout moment.</p>						</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-02e242d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="02e242d" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-201a13f" data-id="201a13f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7aa7fd9 elementor-widget elementor-widget-shortcode" data-id="7aa7fd9" data-element_type="widget" data-widget_type="shortcode.default">
+<div class="elementor-widget-container">
+<div class="elementor-shortcode"><div style="clear: both; " id="gekko-870217452"><script async="" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/f(7).txt" crossorigin="anonymous" data-checked-head="true"></script><ins class="adsbygoogle" style="display:inline-block;width:345px;height:600px;" data-ad-client="ca-pub-2163891761602124" data-ad-slot="2446545533" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_4_host" style="border: none; height: 600px; width: 345px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;border:0;width:345px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="345" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/ads(3).html" data-google-container-id="a!5" data-google-query-id="CIzL3tnr4vsCFU1OaAodTtoGnw" data-load-complete="true"></iframe></div></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+<div class="footer-width-fixer">		<div data-elementor-type="wp-post" data-elementor-id="1828" class="elementor elementor-1828">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-bb7c2ba elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bb7c2ba" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b2c868b" data-id="b2c868b" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-bb41e57 elementor-widget elementor-widget-text-editor" data-id="bb41e57" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p style="margin-bottom: 0px;">© 2022 Gekkode</p>						</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2895e11" data-id="2895e11" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-2f251e8 hfe-nav-menu__breakpoint-none hfe-nav-menu__align-left hfe-submenu-icon-arrow hfe-submenu-animation-none hfe-link-redirect-child elementor-widget elementor-widget-navigation-menu" data-id="2f251e8" data-element_type="widget" data-settings="{&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:5,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_row_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;220&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;distance_from_menu_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="navigation-menu.default">
+<div class="elementor-widget-container">
+<div class="hfe-nav-menu hfe-layout-horizontal hfe-nav-menu-layout horizontal hfe-pointer__none" data-layout="horizontal">
+<div class="hfe-nav-menu__toggle elementor-clickable" aria-haspopup="true" aria-expanded="false">
+<div class="hfe-nav-menu-icon">
+</div>
+</div>
+<nav class="hfe-nav-menu__layout-horizontal hfe-nav-menu__submenu-arrow" data-toggle-icon="" data-close-icon="" data-full-width=""><ul id="menu-1-2f251e8" class="hfe-nav-menu"><li id="menu-item-1830" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://www.gekkode.com/mentions-legales/" class="hfe-menu-item">Mentions légales</a></li>
+<li id="menu-item-1831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy parent hfe-creative-menu"><a href="https://www.gekkode.com/politique-de-confidentialite/" class="hfe-menu-item">Politique de confidentialité</a></li>
+<li id="menu-item-8691" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://www.gekkode.com/politique-de-cookies-ue/" class="hfe-menu-item">Politique de cookies (UE)</a></li>
+</ul></nav>              
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>		</footer>
+</div><script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-S8812ZLCWW');
+</script><div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show">Gérer le consentement</button>
+</div><link rel="stylesheet" id="elementor-post-633-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/post-633.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-post-7600-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/post-7600.css" type="text/css" media="all"><link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(6).css" media="all"><link rel="stylesheet" id="google-fonts-2-css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/css(2)" type="text/css" media="all"><link rel="stylesheet" type="text/css" href="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/lhuz(7).css" media="all"><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/prism-highlight.js.télécharger" id="prismjs-js"></script><script type="text/javascript" id="eael-general-js-extra">
+/* <![CDATA[ */
+var localize = {"ajaxurl":"https:\/\/www.gekkode.com\/wp-admin\/admin-ajax.php","nonce":"58af37a688","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"page_permalink":"https:\/\/www.gekkode.com\/developpement\/realiser-une-carte-en-css-card-ui-css\/","cart_redirectition":"no","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Grand mobile","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablette","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Grande tablette","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portable","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u00c9cran large","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+/* ]]> */
+</script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/general.min.js.télécharger" id="eael-general-js"></script><script type="text/javascript" id="cmplz-cookiebanner-js-extra">
+/* <![CDATA[ */
+var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_ajax_content":"","banner_version":"46","version":"6.3.4","store_consent":"","do_not_track":"","consenttype":"optin","region":"eu","geoip":"","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"1","dismiss_on_scroll":"","cookie_expiry":"365","url":"https:\/\/www.gekkode.com\/wp-json\/complianz\/v1\/","locale":"lang=fr&locale=fr_FR","set_cookies_on_root":"","cookie_domain":"","current_policy_id":"21","cookie_path":"\/","categories":{"statistics":"statistiques","marketing":"marketing"},"tcf_active":"","placeholdertext":"Cliquez pour accepter les cookies {category} et activer ce contenu","css_file":"https:\/\/www.gekkode.com\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=46","page_links":{"eu":{"cookie-statement":{"title":"Politique de cookies ","url":"https:\/\/www.gekkode.com\/politique-de-cookies-ue\/"},"privacy-statement":{"title":"Politique de confidentialit\u00e9","url":"https:\/\/www.gekkode.com\/politique-de-confidentialite\/"}}},"tm_categories":"","forceEnableStats":"","preview":"","clean_cookies":""};
+/* ]]> */
+</script><script defer="" type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/complianz.min.js.télécharger" id="cmplz-cookiebanner-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/frontend.js.télécharger" id="hfe-frontend-js-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/webpack.runtime.min.js.télécharger" id="elementor-webpack-runtime-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/frontend-modules.min.js.télécharger" id="elementor-frontend-modules-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/waypoints.min.js.télécharger" id="elementor-waypoints-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/core.min.js.télécharger" id="jquery-ui-core-js"></script><script type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partager sur Facebook","shareOnTwitter":"Partager sur Twitter","pinIt":"L\u2019\u00e9pingler","download":"T\u00e9l\u00e9charger","downloadImage":"T\u00e9l\u00e9charger une image","fullscreen":"Plein \u00e9cran","zoom":"Zoom","share":"Partager","playVideo":"Lire la vid\u00e9o","previous":"Pr\u00e9c\u00e9dent","next":"Suivant","close":"Fermer"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Grand mobile","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablette","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Grande tablette","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portable","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u00c9cran large","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.7.8","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true},"urls":{"assets":"https:\/\/www.gekkode.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1064,"title":"R%C3%A9aliser%20une%20carte%20en%20CSS%20%28%20Card%20UI%20CSS%20%29%20-%20Gekkode","excerpt":"","featuredImage":"https:\/\/www.gekkode.com\/wp-content\/uploads\/2017\/02\/tutoriel-card-css-1024x576.png"}};
+</script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/frontend.min.js.télécharger" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/base64.min.js.télécharger" id="carredas-elementor-base64-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/infinite-scroll.min.js.télécharger" id="carredas-elementor-infinite-scroll-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/jquery.magnific-popup.min.js.télécharger" id="carredas-elementor-magnific-popup-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/beerslider.min.js.télécharger" id="carredas-elementor-beerslider-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/jquery.countimator.min.js.télécharger" id="carredas-elementor-countimator-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/menu-responsive.js.télécharger" id="carredas-elementor-menu-responsive-js"></script><script type="text/javascript" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/carredas-elementor-public.js.télécharger" id="carredas-elementor-all-js"></script><div class="mr-fade-screen"></div><div class="mr-nav mr-nav-right"><div class="mr-content mr-content-is-visible"><div class="mr-content-header"></div><ul class="mr-menu"><li class="mr-menu-item"><button class="mr-button mr-button-close"><i class="mr-icon mr-icon-close"></i> Fermer</button></li></ul></div></div></div>
+<!-- Statistics script Complianz GDPR/CCPA -->
+<script data-wpfc-render="false">!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script>
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/ads(4).html" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins><iframe src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./Réaliser une carte en CSS ( Card UI CSS ) - Gekkode_files/zrt_lookup.html" style="display: none;"></iframe></html>
