@@ -397,7 +397,6 @@ main a h2 {
     background-position: center;
     position: relative;
     margin-top: 18px;
-
 }
 
 .act1 {
@@ -436,6 +435,53 @@ main a h2 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     bottom: 0;
+}
+
+.foot {
+    position: relative;
+    background-color: #F2F2F2;
+    height: 225px;
+    width: 94%;
+    left: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 147px;
+}
+
+.propos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    margin-right: 348px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+footer ul li h3 {
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
 
 /*********
