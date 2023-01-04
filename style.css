@@ -5,6 +5,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+body>div {
+    margin: 0 auto;
     max-width: 1400px;
 }
 
@@ -59,8 +64,6 @@ nav ul li a {
 
 .formulaire {
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding-left: 55px;
 }
 
@@ -85,7 +88,6 @@ nav ul li a {
     width: 332px;
     border-radius: 15px;
     padding-bottom: 46px;
-
 }
 
 .champ {
@@ -95,7 +97,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-.rechercher button {
+.rechercher a {
     color: white;
     background-color: #0065FC;
     border-radius: 20px;
@@ -111,6 +113,8 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    text-decoration: none;
+    font-size: medium;
 }
 
 .filtre {
@@ -155,7 +159,7 @@ nav ul li a {
 
 .info-logement {
     padding-bottom: 39px;
-    padding-left: 94px;
+    padding-left: 73px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
@@ -448,6 +452,7 @@ article div a div p {
     bottom: 0;
 }
 
+
 footer {
     position: relative;
     background-color: #F2F2F2;
@@ -493,6 +498,98 @@ footer ul li a {
 footer ul li h3 {
     margin-top: 45px;
     margin-bottom: 20px;
+}
+
+/*tablette*/
+@media (max-width:992px) and (min-width:768px) {
+    .menu-nav {
+        width: 95%;
+    }
+
+    .menu-nav img {
+        width: 10%;
+    }
+
+
+    .filtre ul {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .hebergements {
+        width: 90%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .popular {
+        display: flex;
+        height: 278px;
+        width: 883px;
+        left: 0px;
+        top: 0px;
+        border-radius: 20px;
+        margin-left: 0;
+    }
+
+    .most-popular {
+        display: flex;
+        flex-direction: row;
+        bottom: 0;
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+    }
+
+    .section-title-icons {
+        display: flex;
+        justify-content: space-between;
+        height: 10%;
+        margin: 0;
+    }
+
+    .popular-box {
+        height: 144px;
+        width: 252px;
+        border-radius: 20px;
+    }
+
+    article div a div p {
+        white-space: nowrap;
+        height: 50%;
+        font-size: medium;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    footer ul {
+        display: flex;
+    }
+
+    .propos {
+        margin-left: 10%;
+    }
+
+    .help {
+        margin-right: 10%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .menu-nav {
+        background-color: green;
+    }
 }
 
 /*********
