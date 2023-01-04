@@ -393,6 +393,7 @@ main a h2 {
     border-radius: 20px;
     background-size: cover;
     background-position: center;
+    position: relative;
 
 }
 
@@ -412,11 +413,22 @@ main a h2 {
     background-image: url(/Images-Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 }
 
+/*.act-details {
+    position: absolute;
+    background-color: white;
+    width: 24%;
+    height: 5%;
+    bottom: 0;
+}*/
+
 .nom-act {
-    color: red;
-    display: flex;
-    align-items: baseline;
-    border: white 1em;
+    position: absolute;
+    color: black;
+    background-color: white;
+    height: 56px;
+    width: 302px;
+    left: 0px;
+    top: 389px;
 }
 
 /*********
