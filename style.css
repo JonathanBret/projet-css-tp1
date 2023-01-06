@@ -446,10 +446,11 @@ article div a div p {
     position: absolute;
     background-color: white;
     height: 56px;
-    width: 302px;
+    width: 292px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     bottom: 0;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
 }
 
 
@@ -530,11 +531,14 @@ footer ul li h3 {
     .popular {
         display: flex;
         height: 278px;
-        width: 883px;
+        width: 90%;
         left: 0px;
         top: 0px;
         border-radius: 20px;
         margin-left: 0;
+        margin-top: 7%;
+        justify-content: center;
+
     }
 
     .most-popular {
@@ -552,6 +556,7 @@ footer ul li h3 {
         justify-content: space-between;
         height: 10%;
         margin: 0;
+        width: 100%;
     }
 
     .popular-box {
@@ -561,9 +566,16 @@ footer ul li h3 {
     }
 
     article div a div p {
-        white-space: nowrap;
+        white-space: normal;
         height: 50%;
         font-size: medium;
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .act-details {
+        width: 100%;
+        box-shadow: 5px 5px 5px 5px #F2F2F2;
     }
 
     footer {
