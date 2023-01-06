@@ -187,6 +187,8 @@ nav ul li a {
     left: 0px;
     top: 0px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hebergements i {
@@ -198,6 +200,7 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 75%;
 
 }
 
@@ -276,13 +279,9 @@ nav ul li a {
 }
 
 .plus-button {
-    position: absolute;
-    height: 21px;
-    width: 107px;
-    left: 44px;
-    top: 559px;
-    bottom: 0;
-
+    padding-left: 40px;
+    text-decoration: none;
+    color: black;
 }
 
 .main-section {
@@ -331,7 +330,7 @@ main a h2 {
 
 .popular-box {
     position: relative;
-    background-size: cover;
+    background-size: 105%;
     background-position: center;
     height: 144px;
     width: 343px;
@@ -347,6 +346,8 @@ main a h2 {
     height: 100%;
     padding-left: 15px;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .popular-name {
@@ -359,12 +360,22 @@ main a h2 {
 
 .popular-price {
     color: black;
+
+}
+
+.popular-price2 {
     padding-bottom: 44px;
 }
 
 .popular-stars {
+    position: absolute;
     color: #0065FC;
     font-size: small;
+    height: 100%;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .fa-solid.fa-chart-line {
@@ -537,7 +548,9 @@ footer ul li h3 {
         border-radius: 20px;
         margin-left: 0;
         margin-top: 7%;
-        justify-content: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px 3% 0px 3%;
 
     }
 
@@ -546,7 +559,7 @@ footer ul li h3 {
         flex-direction: row;
         bottom: 0;
         width: 100%;
-        justify-content: left;
+        justify-content: space-between;
         align-items: center;
         margin: 0;
     }
@@ -557,12 +570,39 @@ footer ul li h3 {
         height: 10%;
         margin: 0;
         width: 100%;
+        padding-bottom: 2%;
+        padding-left: 0;
+    }
+
+    .popular-name {
+        font-size: medium;
     }
 
     .popular-box {
-        height: 144px;
-        width: 252px;
+        height: 65%;
+        width: 32%;
         border-radius: 20px;
+    }
+
+    .popular-price {
+        font-size: 13px;
+    }
+
+    .popular-stars {
+        position: absolute;
+        color: #0065FC;
+        font-size: small;
+        height: 100%;
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 5%;
+    }
+
+    .popular-details {
+        font-size: 14px;
+        width: 55%;
     }
 
     article div a div p {
