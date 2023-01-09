@@ -640,7 +640,69 @@ footer ul li h3 {
 
 @media (max-width:768px) {
     .menu-nav {
-        background-color: green;
+        display: flex;
+        background-color: ;
+        flex-direction: column;
+    }
+
+    body div nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        border-bottom: #F2F2F2 0.2em solid;
+        padding-bottom: 5%;
+    }
+
+    .img1 {
+        width: 17%;
+        padding: 6% 0 7% 0
+    }
+
+    .ahead {
+        padding: 10% 0 0 5%;
+    }
+
+    .ahead>h1 {
+        font-size: 22px;
+    }
+
+    .ahead>p {
+        padding-top: 13%;
+        padding-bottom: 10%;
+    }
+
+    .rechercher {
+        width: 100%;
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulaire {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .fa-solid.fa-location-dot {
+        border: #F2F2F2 1.5em solid;
+    }
+
+    .champ {
+        width: 55%;
+    }
+
+    .rechercher a {
+        width: 20%;
+    }
+
+    .filtre {
+        display: flex;
+        flex-direction: column;
     }
 }
 
