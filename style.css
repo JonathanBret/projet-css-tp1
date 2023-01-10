@@ -118,13 +118,17 @@ nav ul li a {
 }
 
 .filtre {
-    padding-left: 62px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding-left: 5%;
 }
 
 .filtre ul {
     margin-top: 46px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 70%;
     list-style-type: none;
     padding-bottom: 54px;
@@ -522,6 +526,10 @@ footer ul li h3 {
         width: 10%;
     }
 
+    .filtre {
+        display: flex;
+        justify-content: space-around;
+    }
 
     .filtre ul {
         display: flex;
@@ -704,6 +712,100 @@ footer ul li h3 {
         display: flex;
         flex-direction: column;
     }
+
+    .filtre ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .filtre ul li {
+        width: 45%;
+    }
+
+    .filtre ul li a {
+        font-size: 11px;
+    }
+
+    .animals {
+        width: 0 auto;
+        height: 0 auto;
+    }
+
+    .info-logement {
+        padding-left: 5%;
+    }
+
+    main {
+        height: 90%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+
+    .popular {
+        padding-left: 0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .section-title-icons {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .most-popular {
+        margin: 0 5% 0 5%
+    }
+
+    .hebergements {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-title {
+        padding-left: 3%;
+    }
+
+    .list-loc {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+        padding: 0 0 0 2%;
+    }
+
+    .loc-box {
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .loc1 {
+        padding-top: 20%;
+        width: 50%;
+    }
+
+    .loc2 {
+        padding-top: 30%;
+        width: 50%;
+    }
+
+    .loc3 {
+        padding-top: 30%;
+        width: 50%;
+    }
+
+
 }
 
 /*********
