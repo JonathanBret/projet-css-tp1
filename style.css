@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -12,6 +13,7 @@ body>div {
     margin: 0 auto;
     max-width: 1400px;
 }
+
 
 .menu-nav {
     color: black;
@@ -40,6 +42,12 @@ nav ul li a {
     margin: auto;
     color: black;
 }
+
+nav a:hover {
+    border-top: #0065FC solid;
+    color: #0065FC;
+}
+
 
 .ahead {
     display: flex;
@@ -148,13 +156,17 @@ nav ul li a {
 }
 
 .filtre li {
-    border: #F2F2F2 solid;
+    border: #F2F2F2 solid 0.2em;
     width: 10em;
     height: 2.8em;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.filtre li:hover {
+    background-color: #87aff89c;
 }
 
 .filtre .animals {
@@ -184,7 +196,7 @@ nav ul li a {
     padding-left: 40px;
 }
 
-.hebergements {
+#hebergements {
     background-color: #F2F2F2;
     height: 626px;
     width: 880px;
@@ -195,7 +207,7 @@ nav ul li a {
     flex-direction: column;
 }
 
-.hebergements i {
+#hebergements i {
     font-size: small;
 }
 
@@ -211,17 +223,17 @@ nav ul li a {
 .loc-box {
     position: relative;
     background-size: cover;
-    background-position: center;
-    min-width: 200px;
+    background-position: bottom;
+    min-width: 20%;
     flex: 1;
-    height: 199px;
-    width: 246px;
-    left: 0px;
-    top: 0px;
+    height: 40%;
     border-radius: 20px;
     border: 5px solid white;
+}
 
-
+.loc-box:hover {
+    transform: scale(1.05);
+    transition: 10ms smooth;
 }
 
 .loc1 {
@@ -288,6 +300,11 @@ nav ul li a {
     color: black;
 }
 
+.plus-button:hover {
+    transform: scale(1.01);
+    transition: 10ms smooth;
+}
+
 .main-section {
     width: 1300px;
     display: flex;
@@ -341,6 +358,7 @@ main a h2 {
     border-radius: 20px;
     border: 5px solid white;
 }
+
 
 .popular-details {
     position: absolute;
@@ -400,13 +418,13 @@ main a h2 {
     padding-left: 37px;
 }
 
-.activities {
+#activities {
     height: 480px;
     width: 100%;
     padding-left: 50px;
 }
 
-.activities h1 {
+#activities h1 {
     padding-top: 60px;
 }
 
@@ -426,6 +444,11 @@ main a h2 {
     background-position: center;
     position: relative;
     margin-top: 18px;
+}
+
+.act-box:hover {
+    transform: scale(1.05);
+    transition: 10ms smooth;
 }
 
 .act1 {
@@ -511,6 +534,11 @@ footer ul li a {
     list-style-type: none;
 }
 
+footer ul li:hover {
+    transform: scale(1.05);
+    transition: 10ms smooth;
+}
+
 footer ul li h3 {
     margin-top: 45px;
     margin-bottom: 20px;
@@ -537,7 +565,7 @@ footer ul li h3 {
         width: 90%;
     }
 
-    .hebergements {
+    #hebergements {
         width: 90%;
     }
 
@@ -647,9 +675,9 @@ footer ul li h3 {
 }
 
 @media (max-width:768px) {
+
     .menu-nav {
         display: flex;
-        background-color: ;
         flex-direction: column;
     }
 
@@ -765,7 +793,7 @@ footer ul li h3 {
         margin: 0 5% 0 5%
     }
 
-    .hebergements {
+    #hebergements {
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -791,7 +819,7 @@ footer ul li h3 {
     }
 
     .loc1 {
-        padding-top: 20%;
+        padding-top: 25%;
         width: 50%;
     }
 
@@ -804,6 +832,9 @@ footer ul li h3 {
         padding-top: 30%;
         width: 50%;
     }
+
+
+
 
 
 }
