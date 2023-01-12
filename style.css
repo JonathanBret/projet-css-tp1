@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    max-width: 1400px;
 
 }
 
@@ -23,7 +24,7 @@ body>div {
 
 .img1 {
     width: 8%;
-    padding-top: 1em;
+    padding-top: 1.5em;
     padding-left: 2em;
 }
 
@@ -32,8 +33,9 @@ nav ul {
     margin-left: auto;
     list-style-type: none;
     justify-content: space-between;
-    padding-top: 1em;
+    padding-top: 1.5em;
     width: 20%;
+    height: 100%;
 }
 
 nav ul li a {
@@ -46,7 +48,15 @@ nav ul li a {
 nav a:hover {
     border-top: #0065FC solid;
     color: #0065FC;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
 }
+
+/*nav ul:hover {
+    border-top: #0065FC solid;
+    color: #0065FC;
+}*/
 
 
 .ahead {
@@ -96,6 +106,11 @@ nav a:hover {
     width: 332px;
     border-radius: 15px;
     padding-bottom: 46px;
+}
+
+.fa-solid.fa-magnifying-glass {
+    color: white;
+    display: none;
 }
 
 .champ {
@@ -170,7 +185,7 @@ nav a:hover {
 }
 
 .filtre .animals {
-    width: 12.5em;
+    width: 25%;
 }
 
 .info-logement {
@@ -298,6 +313,7 @@ nav a:hover {
     padding-left: 40px;
     text-decoration: none;
     color: black;
+    width: 18%;
 }
 
 .plus-button:hover {
@@ -550,8 +566,14 @@ footer ul li h3 {
         width: 95%;
     }
 
+    .menu-nav ul {
+        justify-content: space-between;
+        margin-left: 65%;
+        width: 50%;
+    }
+
     .menu-nav img {
-        width: 10%;
+        width: 20%;
     }
 
     .filtre {
@@ -676,6 +698,11 @@ footer ul li h3 {
 
 @media (max-width:768px) {
 
+    * {
+        min-height: 0;
+        max-height: none;
+    }
+
     .menu-nav {
         display: flex;
         flex-direction: column;
@@ -689,6 +716,14 @@ footer ul li h3 {
         width: 100%;
         border-bottom: #F2F2F2 0.2em solid;
         padding-bottom: 5%;
+    }
+
+    body div nav ul:hover {
+        border-bottom: #0065FC 0.2em solid;
+    }
+
+    nav a:hover {
+        border: none;
     }
 
     .img1 {
@@ -736,9 +771,32 @@ footer ul li h3 {
         width: 20%;
     }
 
+    .formulaire {
+        align-items: center;
+    }
+
+    .formulaire a {
+        display: none;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        width: 12%;
+        height: 100%;
+        background-color: #0065FC;
+        border-radius: 20px;
+        border: #0065FC 1em solid;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
     .filtre {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        height: 200px;
     }
 
     .filtre ul {
@@ -747,19 +805,21 @@ footer ul li h3 {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 90%;
+        margin-top: 5%;
+        padding-bottom: 10%;
+        height: 100%;
     }
 
     .filtre ul li {
-        width: 45%;
+        width: 48%;
     }
 
     .filtre ul li a {
         font-size: 11px;
     }
 
-    .animals {
-        width: 0 auto;
-        height: 0 auto;
+    .filtre .animals {
+        width: 48%;
     }
 
     .info-logement {
@@ -767,7 +827,7 @@ footer ul li h3 {
     }
 
     main {
-        height: 90%;
+        height: 2400px;
     }
 
     .main-section {
@@ -775,12 +835,17 @@ footer ul li h3 {
         flex-direction: column-reverse;
         padding: 0;
         margin: 0;
+        height: 100%;
     }
 
     .popular {
         padding-left: 0;
         margin: 0;
         border-radius: 0;
+    }
+
+    .popular-box {
+        width: 95%;
     }
 
     .section-title-icons {
@@ -790,13 +855,14 @@ footer ul li h3 {
     }
 
     .most-popular {
-        margin: 0 5% 0 5%
+        margin: 0 0 0 3%
     }
 
     #hebergements {
         background-color: white;
         display: flex;
         flex-direction: column;
+        height: 80%;
     }
 
     .left-title {
@@ -807,35 +873,120 @@ footer ul li h3 {
         flex-direction: column;
         justify-content: space-between;
         width: 80%;
-        height: 100%;
+        height: 80%;
         padding: 0 0 0 2%;
+        flex-wrap: wrap;
+        max-height: none;
+
+    }
+
+    .loc-details {
+        height: 42%;
     }
 
     .loc-box {
         width: 90%;
-        height: 100%;
         margin: 0;
         padding: 0;
+        border: white 0.2em solid;
+        box-shadow: 5px 5px 5px 5px #F2F2F2;
+        background-size: cover;
     }
 
     .loc1 {
-        padding-top: 25%;
-        width: 50%;
+        margin-bottom: 8%;
+        width: 55%;
     }
 
     .loc2 {
-        padding-top: 30%;
-        width: 50%;
+        margin-bottom: 8%;
+        width: 55%;
+        ;
     }
 
     .loc3 {
-        padding-top: 30%;
-        width: 50%;
+        margin-bottom: 8%;
+        width: 55%;
     }
 
+    .loc4 {
+        margin-bottom: 8%;
+        width: 55%;
+    }
 
+    .loc5 {
+        margin-bottom: 8%;
+        width: 55%;
+    }
 
+    .loc6 {
+        margin-bottom: 8%;
+        width: 55%;
+    }
 
+    #activities {
+        padding-left: 8%;
+        height: 1000px;
+    }
+
+    #activities>h1 {
+        padding-top: 0;
+    }
+
+    .act-marseille {
+        flex-direction: column;
+    }
+
+    .act-box {
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .act1 {
+        margin-bottom: 8%;
+        width: 90%;
+    }
+
+    .act2 {
+        margin-bottom: 8%;
+        width: 90%;
+        background-position: center;
+    }
+
+    .act3 {
+        margin-bottom: 8%;
+        width: 90%;
+    }
+
+    .act4 {
+        margin-bottom: 8%;
+        width: 90%;
+    }
+
+    .act-details {
+        width: 100%;
+    }
+
+    footer {
+        margin: 0;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .propos {
+        margin-left: 8%;
+    }
+
+    footer ul {
+        margin-left: 8%;
+    }
+
+    .help {
+        width: 100%;
+        margin-bottom: 10%;
+    }
 
 }
 
