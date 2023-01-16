@@ -714,8 +714,18 @@ footer ul li h3 {
         align-items: center;
         margin: 0;
         width: 100%;
-        border-bottom: #F2F2F2 0.2em solid;
         padding-bottom: 5%;
+    }
+
+    body div nav ul li {
+        width: 100%;
+    }
+
+    body div nav ul li a {
+        width: 100%;
+        justify-content: center;
+        border-bottom: #F2F2F2 0.2em solid;
+        padding-bottom: 10%;
     }
 
     /*body div nav ul:hover {
