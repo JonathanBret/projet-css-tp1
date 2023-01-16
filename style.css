@@ -833,6 +833,7 @@ footer ul li h3 {
 
     main {
         height: 2400px;
+        width: 100%;
     }
 
     .main-section {
@@ -843,6 +844,7 @@ footer ul li h3 {
         height: 100%;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .popular {
@@ -870,9 +872,9 @@ footer ul li h3 {
 
     #hebergements {
         background-color: white;
-        display: flex;
         flex-direction: column;
         height: 80%;
+        width: 100%;
         align-items: center;
     }
 
@@ -883,57 +885,61 @@ footer ul li h3 {
     .list-loc {
         flex-direction: column;
         justify-content: space-between;
-        width: 80%;
+        width: 100%;
         height: 80%;
-        padding: 0 0 0 2%;
-        flex-wrap: wrap;
         max-height: none;
         align-items: center;
 
     }
 
     .loc-details {
-        height: 42%;
+        height: 43%;
+        width: 100%;
     }
 
     .loc-box {
-        width: 90%;
+        width: 100%;
         margin: 0;
         padding: 0;
-        border: white 0.2em solid;
         box-shadow: 5px 5px 5px 5px #F2F2F2;
         background-size: cover;
     }
 
+    .loc-box:hover {
+        transform: inherit;
+    }
+
     .loc1 {
         margin-bottom: 8%;
-        width: 55%;
+        width: 75%;
     }
 
     .loc2 {
         margin-bottom: 8%;
-        width: 55%;
-        ;
+        width: 75%;
     }
 
     .loc3 {
         margin-bottom: 8%;
-        width: 55%;
+        width: 75%;
     }
 
     .loc4 {
         margin-bottom: 8%;
-        width: 55%;
+        width: 75%;
     }
 
     .loc5 {
         margin-bottom: 8%;
-        width: 55%;
+        width: 75%;
     }
 
     .loc6 {
-        margin-bottom: 8%;
-        width: 55%;
+        width: 75%;
+    }
+
+    .plus-button {
+        display: none;
     }
 
     #activities {
@@ -941,7 +947,7 @@ footer ul li h3 {
         height: 1000px;
     }
 
-    #activities>h1 {
+    #activities>h2 {
         padding-top: 0;
     }
 
