@@ -41,16 +41,15 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     display: flex;
-    margin: auto;
     color: black;
 }
 
 nav a:hover {
+    position: fixed;
     border-top: #0065FC solid;
     color: #0065FC;
-    height: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    padding-top: 1.5em;
+    top: 0px;
 }
 
 /*nav ul:hover {
@@ -440,7 +439,7 @@ main a h2 {
     padding-left: 50px;
 }
 
-#activities h1 {
+#activities h2 {
     padding-top: 60px;
 }
 
@@ -701,6 +700,7 @@ footer ul li h3 {
     * {
         min-height: 0;
         max-height: none;
+        max-width: 768px
     }
 
     .menu-nav {
@@ -718,12 +718,15 @@ footer ul li h3 {
         padding-bottom: 5%;
     }
 
-    body div nav ul:hover {
+    /*body div nav ul:hover {
         border-bottom: #0065FC 0.2em solid;
-    }
+    }*/
 
     nav a:hover {
         border: none;
+        position: relative;
+        border-bottom: #0065FC 0.2em solid;
+        padding-top: 0;
     }
 
     .img1 {
@@ -732,7 +735,7 @@ footer ul li h3 {
     }
 
     .ahead {
-        padding: 10% 0 0 5%;
+        padding: 5% 0 0 5%;
     }
 
     .ahead>h1 {
@@ -740,8 +743,8 @@ footer ul li h3 {
     }
 
     .ahead>p {
-        padding-top: 13%;
-        padding-bottom: 10%;
+        padding-top: 7%;
+        padding-bottom: 5%;
     }
 
     .rechercher {
@@ -780,7 +783,7 @@ footer ul li h3 {
     }
 
     .fa-solid.fa-magnifying-glass {
-        display: inline;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 12%;
@@ -790,6 +793,7 @@ footer ul li h3 {
         border: #0065FC 1em solid;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        cursor: pointer;
     }
 
     .filtre {
@@ -797,6 +801,7 @@ footer ul li h3 {
         flex-direction: column;
         padding: 0;
         height: 200px;
+        justify-content: space-around;
     }
 
     .filtre ul {
@@ -836,16 +841,20 @@ footer ul li h3 {
         padding: 0;
         margin: 0;
         height: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .popular {
         padding-left: 0;
         margin: 0;
         border-radius: 0;
+        width: 100%;
     }
 
     .popular-box {
-        width: 95%;
+        width: 80%;
+
     }
 
     .section-title-icons {
@@ -855,7 +864,8 @@ footer ul li h3 {
     }
 
     .most-popular {
-        margin: 0 0 0 3%
+        margin: 0 0 0 3%;
+        align-items: center;
     }
 
     #hebergements {
@@ -863,6 +873,7 @@ footer ul li h3 {
         display: flex;
         flex-direction: column;
         height: 80%;
+        align-items: center;
     }
 
     .left-title {
@@ -877,6 +888,7 @@ footer ul li h3 {
         padding: 0 0 0 2%;
         flex-wrap: wrap;
         max-height: none;
+        align-items: center;
 
     }
 
