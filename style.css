@@ -52,12 +52,6 @@ nav a:hover {
     top: 0px;
 }
 
-/*nav ul:hover {
-    border-top: #0065FC solid;
-    color: #0065FC;
-}*/
-
-
 .ahead {
     display: flex;
     flex-direction: column;
@@ -101,10 +95,9 @@ nav a:hover {
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    height: 49px;
-    width: 332px;
+    height: 3.7em;
     border-radius: 15px;
-    padding-bottom: 46px;
+    padding-bottom: 4%;
 }
 
 .fa-solid.fa-magnifying-glass {
@@ -114,8 +107,8 @@ nav a:hover {
 
 .champ {
     border: 0.2em #F2F2F2 solid;
-    height: 49px;
-    padding-left: 8px;
+    height: 3.7em;
+    padding-left: 2%;
     font-weight: bold;
 }
 
@@ -127,9 +120,7 @@ nav a:hover {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     height: 49px;
-    width: 132px;
-    left: 341px;
-    top: 200px;
+    width: 35%;
     padding: 15px 16px 15px 16px;
     display: flex;
     justify-content: center;
@@ -148,24 +139,23 @@ nav a:hover {
 }
 
 .filtre ul {
-    margin-top: 46px;
+    margin-top: 5%;
     display: flex;
     justify-content: space-around;
     width: 70%;
     list-style-type: none;
-    padding-bottom: 54px;
+    padding-bottom: 5%;
     align-items: center;
 }
 
 .filtre i {
-    text-decoration: none;
     color: #0065FC;
 }
 
 .filtre a {
     text-decoration: none;
     color: black;
-    margin-left: 10px;
+    margin-left: 5%;
     font-weight: bold;
 }
 
@@ -468,22 +458,22 @@ main a h2 {
 
 .act1 {
     background-image: url(/Images-Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    margin-right: 43px;
+    margin-right: 4%;
 }
 
 .act2 {
     background-image: url(/Images-Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    margin-right: 43px;
+    margin-right: 4%;
 }
 
 .act3 {
     background-image: url(/Images-Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    margin-right: 43px;
+    margin-right: 4%;
 }
 
 .act4 {
     background-image: url(/Images-Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    margin-right: 53px;
+    margin-right: 4%;
 }
 
 article div a div p {
@@ -499,7 +489,7 @@ article div a div p {
     position: absolute;
     background-color: white;
     height: 56px;
-    width: 292px;
+    width: 100%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     bottom: 0;
@@ -728,10 +718,6 @@ footer ul li h3 {
         padding-bottom: 10%;
     }
 
-    /*body div nav ul:hover {
-        border-bottom: #0065FC 0.2em solid;
-    }*/
-
     nav a:hover {
         border: none;
         position: relative;
@@ -812,12 +798,11 @@ footer ul li h3 {
         padding: 0;
         height: 200px;
         justify-content: space-around;
+        margin-top: 3%;
     }
 
     .filtre ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         flex-wrap: wrap;
         width: 90%;
         margin-top: 5%;
@@ -1017,11 +1002,3 @@ footer ul li h3 {
     }
 
 }
-
-/*********
-.plus-button {
-    position: absolute;
-    margin-top: 559px;
-}
-
-/************************************FIN DU TEST********************************************/
