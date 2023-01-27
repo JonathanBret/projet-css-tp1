@@ -36,6 +36,7 @@ nav ul {
     padding-top: 1.5em;
     width: 20%;
     height: 100%;
+    padding-right: 3%;
 }
 
 nav ul li a {
@@ -45,11 +46,8 @@ nav ul li a {
 }
 
 nav a:hover {
-    position: fixed;
     border-top: #0065FC solid;
     color: #0065FC;
-    padding-top: 1.5em;
-    top: 0px;
 }
 
 .ahead {
@@ -230,14 +228,14 @@ nav a:hover {
     background-position: bottom;
     min-width: 20%;
     flex: 1;
-    height: 40%;
+    height: 43%;
     border-radius: 20px;
     border: 5px solid white;
 }
 
 .loc-box:hover {
     transform: scale(1.05);
-    transition: 10ms smooth;
+    transition: 10ms;
 }
 
 .loc1 {
